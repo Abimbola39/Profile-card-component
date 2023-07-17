@@ -1,0 +1,146 @@
+@font-face {
+  font-family: Kumbh Sans;
+  src: url(font/KumbhSans-VariableFont_YOPQ\,wght.ttf);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: right 100vh bottom 40vh, left 90vh top 60vh;
+  background-color: hsl(185, 75%, 39%);
+  font-family: Kumbh Sans;
+}
+
+.container {
+  background-color: aliceblue;
+  height: 355px;
+  border-radius: 15px;
+}
+
+.card-image {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.profile-image {
+  border-radius: 50%;
+  border-width: 2px;
+  border-style: solid;
+  border-color: white;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: -55px;
+}
+
+.name {
+  color: rgb(0, 0, 0);
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.age {
+  font-weight: 400;
+  font-size: 18px;
+  color: hsl(227, 10%, 46%);
+}
+
+.country {
+  font-weight: 400;
+  margin-top: 0;
+  color: hsl(227, 10%, 46%);
+  font-size: 14px;
+}
+
+hr {
+  color: hsla(228, 100%, 99%, 0.658);
+  margin-top: 10px;
+  border-style: inset;
+  border-width: 1px;
+  margin-bottom: 0;
+}
+
+.social-audience {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 0px 20px 0px 20px;
+  margin: 0;
+}
+
+.likes,
+.followers,
+.photos {
+  text-align: center;
+}
+
+.numbers {
+  color: hsl(0, 0%, 0%);
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.social-audience p:nth-child(2) {
+  font-size: 13px;
+  margin-top: 6px;
+  color: hsl(227, 10%, 46%);
+}
+
+@media only screen and (max-width: 630px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url(images/bg-pattern-top.svg),
+      url(images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: right 20vh bottom 50vh, left 15vh top 50vh;
+    background-color: hsl(185, 75%, 39%);
+  }
+  .container {
+    background-color: aliceblue;
+    width: 340px;
+    height: 370px;
+    border-radius: 15px;
+    font-family: Kumbh Sans;
+  }
+  .card-image {
+    width: 100%;
+  }
+
+  .name {
+    color: rgb(0, 0, 0);
+    margin-top: 24px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  .country {
+    font-weight: 400;
+    margin-top: px;
+    color: hsl(227, 10%, 46%);
+    font-size: 14px;
+  }
+
+  hr {
+    margin-top: 10px;
+  }
+
+  .social-audience {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0px 20px 0px 20px;
+    margin-bottom: 1px;
+  }
+}
